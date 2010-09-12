@@ -95,6 +95,7 @@ when /linux/
   # end
 
   # on Unix we need a g++ link, not gcc.
+  CONFIG['CXX']="gcc"
   CONFIG['LDSHARED'] = "$(CXX) -shared"
 
 when /aix/
